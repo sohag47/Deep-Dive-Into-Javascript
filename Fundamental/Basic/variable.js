@@ -65,3 +65,7 @@ console.log("🚀 ~ file: variable.js ~ line 44 ~ carName1", carName3)
 * A new Function
 * A new RegExp
 */
+
+// window global variable
+window.value = 90;
+// alert(window.value);
