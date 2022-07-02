@@ -6,6 +6,8 @@
 * 3. (Boolean)	represents boolean value either false or true
 * 4. (Undefined)	represents undefined value
 * 5. (Null)	represents null i.e. no value at all
+* 6. (symbol)
+* 7. (bigint)
 */
 
 //? JavaScript non-primitive data types
