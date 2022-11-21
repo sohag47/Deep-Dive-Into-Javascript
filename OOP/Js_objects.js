@@ -1,30 +1,47 @@
 //? JavaScripts Objects 
 
-//! init objects
-let user = new Object();
-console.log(user)
+//! init objects:
+let user1 = new Object();
+let user = {};
+console.log(user1, user)
 
-let user1 = {
+//! object value assign:
+user = {
     name: "John",
     age: 30,
     "likes birds": true,
     isAdmin: true
 };
-console.log(user1);
-console.log(user1["likes birds"])
 
-delete user1.name;
+//? Object querying:
+/*
+* object.property
+* object["property"]
+*/
+console.log(user);
+console.log(user.age)
+console.log(user["likes birds"])
 
-for (let key in user1) {
-    console.log(user1[key]);
+//? object iterations:
+
+for (element in user) {
+    console.log(`${element} > ${user[element]}`)
 }
 
-let fruits = "mango"
+//? Property Access Errors: 
+console.log(user.dob) // undefined
+
+//? delete object property:
+delete user.name;
+console.log(user)
+
+
+//? check empty object:
 let beg ={}
 console.log(beg.noSuchProperty === undefined)
 beg[fruits] = 5
 console.log(beg.mango) 
 
-//? check value
+// //? check value
 console.log("age" in user1)
 
